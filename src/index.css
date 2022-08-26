@@ -1,13 +1,189 @@
+html {
+    margin: 0px;
+    padding: 0px;
+}
+#root {
+    height: 100% !important;
+}
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+    height: 100vh;
+    background: linear-gradient(
+        to bottom,
+        #ffffff 0%,
+        #f7f7f7 60%,
+        #ffffff 50%,
+        #ffffff 100%
+    );
+    margin: 0;
+    font-family: 'Inter Regular';
+    font-style: normal;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    overflow-x: hidden;
+    min-width: 320px;
+    /* background: #fff; */
+    font-size: 14px;
+    line-height: 1.4285em;
+    color: rgba(0, 0, 0, 0.87);
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+@media screen and (max-width: 1024px) and (min-width: 769px) {
+    .logo a {
+        margin-left: 62px;
+    }
+}
+.logo a {
+    margin-left: 72px;
+    font-style: normal;
+    font-family: 'DM Sans Medium';
+    font-weight: 500;
+    font-size: 28px;
+    letter-spacing: -0.06em;
+    color: #37f;
+}
+
+a,
+a:hover {
+    text-decoration: none;
+}
+
+a {
+    background-color: transparent !important;
+}
+
+.forgotPassword {
+    font-family: 'Inter Medium';
+}
+
+.headerContainer {
+    width: 100%;
+    height: auto;
+    padding-top: 20px !important;
+}
+
+.center {
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    border: 2px solid #3377ff !important;
+    background-color: #ffffff !important;
+    width: 100% !important;
+    /* min-width: 479px !important; */
+    width: 100% !important;
+    max-width: 500px !important;
+    min-height: 475px !important;
+    max-height: 475px !important;
+    padding:  0 50px 50px 50px !important;
+    border-radius: 8px !important;
+}
+
+.card_heading {
+    font-family: 'Inter Regular';
+    text-align: center;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 22px;
+    letter-spacing: -0.01em;
+    color: #0b0b0b;
+    margin-top: 30px !important;
+    margin-bottom: 40px !important;
+    margin-left: 35px !important;
+}
+
+.required {
+    font-family: 'Inter Regular';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    letter-spacing: -0.01em;
+    color: #8b8b8b;
+}
+
+.required::after {
+    content: ' *';
+    color: red;
+    display: inline;
+}
+.eyeIcon {
+    position: absolute;
+    padding-top: 14px !important;
+    margin-left: -32px !important;
+}
+input {
+    width: 400px !important;
+    height: auto;
+    padding: 12px 32px;
+    border: 2px solid #ececec;
+    border-radius: 4px;
+    margin-top: 2px !important;
+}
+
+button {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-align-items: center;
+    align-items: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    padding: 12px 120px;
+    border: none;
+    border-radius: 8px;
+    height: auto;
+    font-family: 'Inter Regular';
+    background-color: #37f;
+    box-shadow: 0 2px 2px rgb(0 0 0 / 12%);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 151.5%;
+    letter-spacing: -0.01em;
+    color: #fff;
+    cursor: poInter Regular;
+}
+
+button.primary {
+    background-color: #37f !important;
+    color: #ffffff !important;
+}
+button.primary img {
+    margin-right: 10px !important;
+    margin-top: -2px !important;
+}
+button.login {
+    background-color: #fff !important;
+    display: -webkit-flex;
+    -webkit-align-items: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    font-family: 'Inter Regular';
+    margin-top: 1px;
+    padding: 9px 120px;
+    border: 2px solid #37f;
+    box-shadow: 0 2px 2px rgb(0 0 0 / 12%);
+    border-radius: 8px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    letter-spacing: -0.01em;
+    color: #37f;
+    cursor: pointer;
+}
+button.login:hover {
+    background-color: #3568d4;
+}
+button.login img {
+    margin-right: 10px !important;
+    margin-top: -5px !important;
+}
+.font12 {
+    font-size: 12px !important;
+}
+.font14 {
+    font-size: 14px !important;
 }

@@ -1,25 +1,27 @@
-import logo from './logo.svg';
+import React from 'react';
 import './App.css';
+import LoginPage from './Pages/LoginPage';
+import './assets/styles/style.css';
+import './assets/style.css';
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    return (
+        <>
+            <div className="headerContainer">
+                <span className="logo">
+                    <a href="/" target="_blank">
+                        deepsync
+                    </a>
+                </span>
+            </div>
+            <div className="center">
+                <LoginPage />
+            </div>
+            <div className="text-center">
+                © 2022 DeepSync Technologies. All rights reserved.
+            </div>
+        </>
+    );
 }
 
 export default App;
